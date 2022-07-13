@@ -1,0 +1,55 @@
+@import '../../../../../dist/scss/variables.scss';
+
+section{
+  width: 100%;
+  min-height: 16rem;
+
+  background: $neutra-01;
+  border-radius: 0.4rem;
+
+  margin-top: 1.25rem;
+
+  &.loading{
+    background-image: url("../../../../../assets/images/bg-task.svg");
+    background-repeat: no-repeat;
+    background-position: center 30px;
+  }
+
+  ul{
+    padding: 1.9rem;
+
+    li{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-bottom: 0.6rem;
+
+      input{
+        background: $neutra-01;
+
+        &[type="checkbox"]{
+          width: 5%;
+          height: 1.9rem;
+        }
+        &[type="text"]{
+          width: 80%;
+          padding: 0.3rem 0.6rem;
+          border: none;
+
+          font-size: 1rem;
+          color: $neutra-02;
+          &.checked{
+            text-decoration: line-through;
+          }
+        }
+      }
+
+      button{
+        width: 5%;
+        background: none;
+        border: none;
+      }
+    }
+  }
+}

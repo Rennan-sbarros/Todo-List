@@ -1,0 +1,22 @@
+@import '../../../../../dist/scss/variables.scss';
+
+:host{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1.25rem;
+
+  button{
+    border: none;
+    border-radius: 3rem;
+    background: $neutra-01;
+
+    font-size: 1rem;
+    font-family: 'Open Sans';
+    color: $secundaria-01;
+
+    width: 50%;
+    padding: 0.6rem;
+  }
+}

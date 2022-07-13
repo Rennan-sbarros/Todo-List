@@ -12,8 +12,20 @@ body{
   color: $neutra-01;
 }
 
+ul{
+  list-style: none;
+}
+
+textarea:focus, input:focus, button{
+  outline: none;
+}
+
+button{
+  cursor: pointer;
+}
+
 // Classes
 .container{
-  width: 44rem;
+  width: 30rem;
   margin: 3.1rem auto;
 }
